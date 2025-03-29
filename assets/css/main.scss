@@ -5,15 +5,22 @@
 
 // 2. Include any default variable overrides here
 
-
-
 // -----------------------------------------------------------------------------
 // CUSTOM VALUES
 // -----------------------------------------------------------------------------
+
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+// Override Bootstrap's default font family
+$font-family-sans-serif: "Poppins", sans-serif;
+
 $theme-colors: (
-  "primary": #008080,  // Teal (for water and balance)
-  "secondary": #004d40, // Deep Green (for forests and sustainability)
-  "success": #28a745 // Leafy Green (for growth and progress)
+  "primary": #2a9d8f,
+  // Teal (for water and balance)
+  "secondary": #004d40,
+  // Deep Green (for forests and sustainability)
+  "success": #28a745 // Leafy Green (for growth and progress),,,,,,,,,,,,,,,,,,,
 );
 
 // ------------------------------------------------------------------------------------------------
@@ -29,7 +36,7 @@ $theme-colors: (
 @import "../../node_modules/bootstrap/scss/mixins";
 @import "../../node_modules/bootstrap/scss/root";
 
-// 6. Option../ally include any other parts as needed
+// 6. Optionally include any other parts as needed
 @import "../../node_modules/bootstrap/scss/utilities";
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/type";
@@ -46,10 +53,55 @@ $theme-colors: (
 @import "../../node_modules/bootstrap/scss/carousel";
 @import "../../node_modules/bootstrap/scss/close";
 @import "../../node_modules/bootstrap/scss/tables";
-@import "../../node_modules/bootstrap/scss/tables";
 @import "../../node_modules/bootstrap/scss/containers";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
+
+// ----------------------------------------------------------------------------
+// PULSE BUTTON EFFECT
+// ----------------------------------------------------------------------------
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(42, 157, 143, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 10px 10px rgba(42, 157, 143, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(42, 157, 143, 0);
+  }
+}
+
+.btn-pulse {
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: 0.3s;
+  animation: pulse 1s infinite;
+}
+
+.btn-pulse:hover {
+  background-color: darken(#136e64, 50%);
+}
+
+// ----------------------------------------------------------------------------
+// HERO IMAGE
+// ----------------------------------------------------------------------------
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/HERO.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}

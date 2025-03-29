@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+    <style>
+      .team-section {
+        background: white;
+        padding: 0;
+        text-align: center;
+        max-width: 100vw;
+        max-height: 100%;
+        margin: 0;
+      }
+      .team-images img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+
+      .impact-section {
+        text-align: center;
+        padding: 50px;
+        max-width: 100vw;
+        margin: auto;
+      }
+      .impact-title {
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 40px;
+      }
+      .impact-title::after {
+        content: "";
+        flex: 1;
+        height: 2px;
+        background-color: black;
+        margin-left: 10px;
+      }
+      .impact-item {
+        text-align: left;
+      }
+
+      .impact-icon {
+        width: 60px;
+        height: 60px;
+        background-color: #ddd;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+
+      .impact-icon img {
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- hero section -->
+    <section class="hero">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold ms-5 fs-2 text-white" href="#">LOGO</a>
+
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll fw-semibold d-flex gap-3"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="about.html"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+            <a href="#donation-section">
+            <button
+              class="btn btn-pulse bg-primary me-5 text-white"
+              type="submit"
+            >
+              Donate
+            </button>
+          </a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="hero-content text-center text-white">
+        <h2 class="display-3 fw-semibold">Environmental Heroes</h2>
+        <h2 class="display-3 fw-semibold">Making a Difference</h2>
+        <p class="lead fw-medium">
+          Save the Earth. Unleash your Inner Eco-Hero!
+        </p>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section mt-5">
+      <h2 class="fw-semibold pt-5">Team</h2>
+      <p class="text-muted pb-5">
+        Meet the change-makers behind our mission - a dedicated group of
+        scientists,<br />
+        activists, and sustainability experts committed to protecting our
+        planet.<br />
+        Together, we turn environmental challenges into actionable solutions.
+      </p>
+
+      <div class="container">
+        <div class="row g-3">
+          <!-- First Row -->
+          <div class="col-md-4 col-6 team-images">
+            <img src="assets/img/person1.jpg" alt="Team Member 1" />
+          </div>
+          <div class="col-md-4 col-6 team-images">
+            <img src="assets/img/person2.jpg" alt="Team Member 2" />
+          </div>
+          <div class="col-md-4 col-6 team-images">
+            <img src="assets/img/person3.jpg" alt="Team Member 3" />
+          </div>
+          <!-- Second Row -->
+          <div class="col-md-4 col-6 team-images">
+            <img src="assets/img/person4.jpg" alt="Team Member 4" />
+          </div>
+          <div class="col-md-4 col-6 team-images">
+            <img src="assets/img/person5.jpg" alt="Team Member 5" />
+          </div>
+          <div class="col-md-4 col-6 team-images">
+            <img src="assets/img/person6.jpg" alt="Team Member 6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact-section mt-5" aria-labelledby="impact-heading">
+      <div class="container">
+        <h2
+          id="impact-heading"
+          class="impact-title fw-semibold pb-5 text-center"
+        >
+          Our Impact on Nature
+        </h2>
+
+        <div class="row">
+          <!-- Impact Item 1 -->
+          <div class="col-md-3 col-6 impact-item mb-4 text-start">
+            <div class="impact-icon mb-3 text-start">
+              <img
+                src="assets/img/plant.png"
+                alt="Plant icon"
+                width="60"
+                height="60"
+              />
+            </div>
+            <h5 class="text-start">Sustainable Resources</h5>
+            <p class="text-muted text-start">
+              We promote sustainable resource management to ensure long-term
+              environmental health.
+            </p>
+          </div>
+
+          <!-- Impact Item 2 -->
+          <div class="col-md-3 col-6 impact-item mb-4 mt-md-5 text-start">
+            <div class="impact-icon mb-3 text-start">
+              <img
+                src="assets/img/renewable.png"
+                alt="Renewable energy icon"
+                width="60"
+                height="60"
+              />
+            </div>
+            <h5 class="text-start">Reforestation</h5>
+            <p class="text-muted text-start">
+              Our reforestation initiatives help restore ecosystems and combat
+              climate change.
+            </p>
+          </div>
+
+          <!-- Impact Item 3 -->
+          <div class="col-md-3 col-6 impact-item mb-4 text-start">
+            <div class="impact-icon mb-3 text-start">
+              <img
+                src="assets/img/windmill.png"
+                alt="Windmill icon"
+                width="60"
+                height="60"
+              />
+            </div>
+            <h5 class="text-start">Renewable Energy</h5>
+            <p class="text-muted text-start">
+              We invest in clean, renewable energy solutions to reduce
+              dependence on fossil fuels.
+            </p>
+          </div>
+
+          <!-- Impact Item 4 -->
+          <div class="col-md-3 col-6 impact-item mb-4 mt-md-5 text-start">
+            <div class="impact-icon mb-3 text-start">
+              <img
+                src="assets/img/plantcare.png"
+                alt="Plant care icon"
+                width="60"
+                height="60"
+              />
+            </div>
+            <h5 class="text-start">Environmental Care</h5>
+            <p class="text-muted text-start">
+              Our comprehensive environmental programs protect natural habitats.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials py-5 bg-light">
+      <div class="container">
+        <h2
+          id="impact-heading"
+          class="impact-title fw-semibold pb-5 text-center"
+        >
+          Testimonials
+        </h2>
+        <div class="row g-4">
+          <!-- Testimonial 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-1 shadow-sm">
+              <div class="card-body p-4">
+                <p class="card-text mb-4 pb-4 fw-semibold">
+                  "This website has completely changed how I view
+                  sustainability! I've learned simple, everyday habits that make
+                  a big impact on the environment. Now, I recycle more, use less
+                  plastic, and even started composting!"
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      src="assets/img/Avatar 1.png"
+                      class="rounded-circle"
+                      width="50"
+                      height="50"
+                      alt="Mendoza"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-0 fw-bold">Carlos Mendoza</h6>
+                    <small class="text-muted"
+                      >A high school teacher passionate about teaching
+                      sustainability to students.</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-1 shadow-sm">
+              <div class="card-body p-4">
+                <p class="card-text mb-4 pb-4 fw-semibold">
+                  "Thanks to the information here, I've joined a local
+                  tree-planting initiative. It feels amazing to contribute to a
+                  greener future and see the direct impact of my efforts in my
+                  community."
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      src="assets/img/Avatar 2.png"
+                      class="rounded-circle"
+                      width="50"
+                      height="50"
+                      alt="DelaCruz"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-0 fw-bold">Maria Dela Cruz</h6>
+                    <small class="text-muted"
+                      >An outdoor enthusiast and volunteer dedicated to
+                      protecting local green spaces.</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 border-1 shadow-sm">
+              <div class="card-body p-4">
+                <p class="card-text mb-4 pb-4 fw-semibold">
+                  "I never realized how much my daily choices affected the
+                  planet until I found this site. Now, I shop sustainably,
+                  reduce my carbon footprint, and inspire my friends to do the
+                  same!"
+                </p>
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0">
+                    <img
+                      src="assets/img/Avatar 3.png"
+                      class="rounded-circle"
+                      width="50"
+                      height="50"
+                      alt="Reyes"
+                    />
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <h6 class="mb-0 fw-bold">Angela Reyes</h6>
+                    <small class="text-muted"
+                      >A college student committed to promoting eco-friendly
+                      lifestyles.</small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Form Section -->
+    <section
+      class="donation-section vh-200 min-vh-200 d-flex align-items-center mt-5"
+      style="
+        background: url('assets/img/donation\ bg.jpg') center/cover no-repeat;
+      "
+      id="donation-section"
+    >
+      <div class="container-fluid p-5">
+        <div class="row g-0 justify-content-center p-5">
+          <div
+            class="col-lg-6 text-center p-3"
+            style="background-color: rgba(255, 255, 255, 0.212)"
+          >
+            <h2 class="display-6 fw-semibold m-4 text-white">
+              Donate and Help us Plant a Tree!
+            </h2>
+
+            <!-- Donation Form Card -->
+            <div class="card border-0 py-4 mb-2 bg-transparent px-5">
+              <div class="card-body">
+                <div class="mb-0">
+                  <input
+                    type="number"
+                    class="form-control form-control-sm text-end"
+                    placeholder="USD"
+                  />
+                </div>
+                <p class="text-start pt-0 ps-2 text-white fw-lighter small">
+                  Saved Trees
+                </p>
+                <p class="small text-white mb-2">
+                  All proceeds will be delivered to the
+                  <strong>Global Reforestation Initiative</strong>
+                  organized by <strong>EcoAction Worldwide</strong>, a
+                  non-profit focused on broadening and diversifying the
+                  environmental movement worldwide, and mobilizing it as the
+                  most effective vehicle for promoting a healthy, sustainable
+                  environment.
+                </p>
+                <!-- Donate Button -->
+                <button
+                  class="btn btn-pulse bg-primary text-white mt-3"
+                  type="submit"
+                >
+                  Donate
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary text-white py-5">
+      <div class="container">
+        <div class="row">
+          <!-- Logo Column -->
+          <div class="col-md-3 mb-4 mb-md-0 ps-5">
+            <h2 class="h3 mb-3">LOGO</h2>
+          </div>
+
+          <!-- Information Column -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h3 class="h5 mb-3">Information</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2"><img src="assets/img/telephone.png" class="pb-2" alt=""> +63956846541</li>
+              <li class="mb-2"><img src="assets/img/mail.png" class="pb-1" style="width: 1.3rem; height: 1.5rem;" alt=""> example@email.com</li>
+            </ul>
+          </div>
+          <!-- location -->
+          <div class="col-md-3 mb-4 mb-md-0">
+            <h3 class="h5 mb-3">Our Location</h3>
+            <p><img src="assets/img/location.png" class="pb-2" alt=""> Victorias City, Philippines</p>
+          </div>
+
+          <!-- Follow Us Column -->
+          <div class="col-md-3">
+            <h3 class="h5 mb-3">Follow Us</h3>
+
+            <!-- Social Icons (optional) -->
+            <div class="d-flex gap-3">
+              <a href="#" class="text-white"><img src="assets/img/Icon.png" alt=""></a>
+              <a href="#" class="text-white"><img src="assets/img/Icon2.png" alt=""></i></a>
+            </div>
+          </div>
+        </div>
+
+     
+      </div>
+    </footer>
+     <!-- Copyright Section -->
+     <div class="bg-white text-dark py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0 p-1">© Keith Arcedes / Christine Joy Sorilla 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

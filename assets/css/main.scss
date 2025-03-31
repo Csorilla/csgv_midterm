@@ -20,7 +20,8 @@ $theme-colors: (
   // Teal (for water and balance)
   "secondary": #004d40,
   // Deep Green (for forests and sustainability)
-  "success": #28a745 // Leafy Green (for growth and progress),,,,,,,,,,,,,,,,,,,,
+  "success": #28a745
+    // Leafy Green (for growth and progress),,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // ------------------------------------------------------------------------------------------------
@@ -88,20 +89,4 @@ $theme-colors: (
 
 .btn-pulse:hover {
   background-color: darken(#ffffff, 50%);
-}
-
-// ----------------------------------------------------------------------------
-// HERO IMAGE
-// ----------------------------------------------------------------------------
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url("../img/HERO.jpg") no-repeat center center/cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
 }

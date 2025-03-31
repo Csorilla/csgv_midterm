@@ -8,6 +8,9 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Bootstrap CSS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
   
     <title>Document</title>
     <style>
@@ -60,49 +63,54 @@
   <body>
     <main>
       <!-- About Us Section -->
-      <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
-        <div class="container d-flex justify-content-between align-items-center">
-          <!-- Logo aligned to the left -->
-          <a class="navbar-brand fw-bold fs-2 text-white me-auto" href="#">LOGO</a>
-      
-          <!-- Mobile Toggler -->
-          <button
-            class="navbar-toggler d-lg-none shadow-none border-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#mobileMenu"
-            aria-controls="mobileMenu"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-      
-          <!-- Desktop Navigation -->
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav fw-semibold gap-4">
-              <li class="nav-item">
-                <a class="nav-link active text-white" href="index.html">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-      
-          <!-- Donate Button -->
-          <a href="#donation-section" class="ms-3 d-none d-lg-block">
-            <button class="btn btn-pulse bg-primary text-white">Donate</button>
-          </a>
-        </div>
-      </nav>
       <section
-        class="about-section overflow-hidden d-flex flex-column justify-content-center align-items-center vh-100 "
+        class="about-section overflow-hidden d-flex flex-column justify-content-center align-items-center vh-100"
       >
-   
-      
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+          <div class="container">
+             <!-- Logo -->
+             <img src="assets/img/final_logo.png" style="height:50px;" />
+             <a class="navbar-brand fw-bold ms-1 ms-md-1 fs-2 text-white d-none d-md-inline" href="#">
+               ECO
+             </a>
 
+            <!-- Mobile Toggler -->
+            <button
+              class="navbar-toggler d-lg-none shadow-none border-0 me-3"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Desktop Navigation -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul
+                class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll fw-semibold gap-lg-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active text-white" href="index.html"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="contact.html">CONTACT</a>
+                </li>
+              </ul>
+              <a href="#donation-section" class="d-none d-lg-block ms-lg-3">
+                <button class="btn btn-pulse bg-primary text-white">
+                  Donate
+                </button>
+              </a>
+            </div>
+          </div>
+        </nav>
         <!-- Mobile Offcanvas Menu -->
         <div
           class="offcanvas offcanvas-end d-lg-none bg-dark"
@@ -477,8 +485,9 @@
         <div class="container">
           <div class="row text-center text-lg-start">
             <!-- Logo -->
-            <div class="col-12 col-lg-3 mb-4 mb-lg-0">
-              <h2 class="h3 mb-0">LOGO</h2>
+            <div class="col-12 col-lg-3 mb-4 mb-lg-0 d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start">
+              <img src="assets/img/final_logo.png" style="height:50px;" />
+              <h2 class="h3 mb-0 pt-2 d-none d-md-inline">ECO</h2>
             </div>
 
             <!-- Information -->
@@ -549,7 +558,7 @@
           <div class="row">
             <div class="col-12 text-center">
               <p class="mb-0 p-1">
-                © Keith Arcedes / Christine Joy Sorilla 2025
+                © Keith Arcedes / Cristine Joy Sorilla 2025
               </p>
             </div>
           </div>

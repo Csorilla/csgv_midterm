@@ -3,197 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="assets/css/bootstrap.min.css"
-    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="assets/js/bootstrap.min.js"></script>
     <title>Environmental Conservation Organization</title>
     <link rel="icon" href="assets/img/final_logo.png" type="image/x-icon" />
-    <style>
-      .team-section {
-        background: white;
-        padding: 0;
-        text-align: center;
-        max-width: 100vw;
-        max-height: 100%;
-        margin: 0;
-      }
-      .team-images img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 5px;
-      }
-
-      .impact-section {
-        text-align: center;
-        padding: 50px;
-        max-width: 100vw;
-        margin: auto;
-      }
-      .impact-title {
-        font-weight: bold;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-bottom: 40px;
-      }
-      .impact-title::after {
-        content: "";
-        flex: 1;
-        height: 2px;
-        background-color: black;
-        margin-left: 10px;
-      }
-      .impact-item {
-        text-align: left;
-      }
-
-      .impact-icon {
-        width: 60px;
-        height: 60px;
-        background-color: #ddd;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        font-size: 30px;
-        margin-bottom: 15px;
-      }
-
-      .impact-icon img {
-        max-width: 100%;
-      }
-
-      .navbar-toggler {
-        border: none;
-        box-shadow: none !important;
-      }
-      .navbar-toggler-icon {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-      }
-
-      .hero {
-        background: url("assets/img/HERO.jpg") no-repeat center center;
-        background-size: cover;
-        position: relative;
-        width: 100%;
-      }
-    </style>
   </head>
   <body>
     <main>
       <!-- Hero Section -->
-      <section
-        class="hero overflow-hidden d-flex flex-column justify-content-center align-items-center vh-100 position-relative"
-      >
-        <nav
-          class="navbar navbar-expand-lg bg-transparent position-absolute top-0 start-0 w-100"
-        >
+      <section class="hero overflow-hidden d-flex flex-column justify-content-center align-items-center vh-100 position-relative">
+        <nav class="navbar navbar-expand-lg bg-transparent position-absolute top-0 start-0 w-100">
           <div class="container">
             <!-- Logo -->
-            <img src="assets/img/final_logo.png" style="height: 50px" />
-            <a
-              class="navbar-brand fw-bold ms-1 ms-md-1 fs-2 text-white d-none d-md-inline"
-              href="#"
-            >
-              ECO
+            <a href="index.html" class="d-flex align-items-center text-decoration-none">
+              <img src="assets/img/final_logo.png" alt="Logo" style="height: 50px" />
+              <span class="navbar-brand fw-bold ms-2 fs-2 text-white d-none d-md-inline">ECO</span>
             </a>
+        
             <!-- Mobile Toggler -->
-            <button
-              class="navbar-toggler d-lg-none shadow-none border-0 me-3"
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#mobileMenu"
-              aria-controls="mobileMenu"
-            >
+            <button class="navbar-toggler d-lg-none shadow-none border-0 me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
               <span class="navbar-toggler-icon"></span>
             </button>
+        
             <!-- Desktop Navigation -->
             <div class="collapse navbar-collapse" id="navbarNav">
-              <ul
-                class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll fw-semibold gap-lg-3"
-              >
-                <li class="nav-item">
-                  <a class="nav-link active text-white" href="index.html"
-                    >HOME</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="contact.html">CONTACT</a>
-                </li>
+              <ul class="navbar-nav ms-auto fw-semibold gap-lg-3">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">HOME</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="about.html">ABOUT</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="contact.html">CONTACT</a></li>
               </ul>
               <a href="index.html#donation-section" class="d-none d-lg-block ms-lg-3">
-                <button class="btn btn-pulse bg-secondary text-white">
-                  Donate
-                </button>
+                <button class="btn btn-pulse bg-secondary text-white">Donate</button>
               </a>
             </div>
           </div>
         </nav>
-
+        
         <!-- Mobile Offcanvas Menu -->
-        <div
-          class="offcanvas offcanvas-end d-lg-none bg-dark"
-          tabindex="-1"
-          id="mobileMenu"
-          aria-labelledby="mobileMenuLabel"
-        >
+        <div class="offcanvas offcanvas-end d-lg-none bg-dark" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
           <div class="offcanvas-header border-bottom border-secondary">
-            <h5 class="offcanvas-title text-white" id="mobileMenuLabel">
-              MENU
-            </h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
+            <h5 class="offcanvas-title text-white">MENU</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-          <div
-            class="offcanvas-body py-4 d-flex flex-column align-items-center justify-content-start"
-          >
-            <ul class="navbar-nav fw-semibold text-center">
-              <li class="nav-item mb-3">
-                <a
-                  class="nav-link active text-white"
-                  href="index.html"
-                  onclick="closeOffcanvas()"
-                  >HOME</a
-                >
-              </li>
-              <li class="nav-item mb-3">
-                <a
-                  class="nav-link text-white"
-                  href="about.html"
-                  onclick="closeOffcanvas()"
-                  >ABOUT</a
-                >
-              </li>
-              <li class="nav-item mb-4">
-                <a
-                  class="nav-link text-white"
-                  href="contact.html"
-                  onclick="closeOffcanvas()"
-                  >CONTACT</a
-                >
-              </li>
+          <div class="offcanvas-body d-flex flex-column align-items-center">
+            <ul class="navbar-nav fw-semibold text-center w-100">
+              <li class="nav-item"><a class="nav-link text-white" href="index.html" onclick="closeOffcanvas()">HOME</a></li>
+              <li class="nav-item"><a class="nav-link text-white" href="about.html" onclick="closeOffcanvas()">ABOUT</a></li>
+              <li class="nav-item mb-3"><a class="nav-link text-white" href="contact.html" onclick="closeOffcanvas()">CONTACT</a></li>
             </ul>
-            <a
-              href="#donation-section"
-              class="btn btn-secondary btn-pulse w-20 py-2"
-              onclick="scrollToDonation()"
-              >Donate</a
-            >
+            <a href="#donation-section" class="btn btn-secondary btn-pulse py-2" onclick="scrollToDonation()">Donate</a>
           </div>
         </div>
-
+        
         <!-- Hero Content -->
         <div class="hero-content text-center text-white position-relative">
           <h2 class="display-3 fw-semibold">Environmental Heroes</h2>
@@ -203,7 +65,6 @@
           </p>
         </div>
       </section>
-
       <!-- Team Section -->
       <section class="team-section mt-5">
         <h2 class="fw-semibold pt-5 text-center">Team</h2>
@@ -217,246 +78,146 @@
 
         <div class="container">
           <!-- Carousel for Small to Medium Screens -->
-          <div
-            id="teamCarousel"
-            class="carousel slide d-block d-md-none"
-            data-bs-ride="carousel"
-          >
+          <div id="teamCarousel" class="carousel slide d-block d-md-none" data-bs-ride="carousel">
             <div class="carousel-inner text-center">
               <div class="carousel-item active">
-                <img
-                  src="assets/img/person1.jpg"
-                  class="d-block w-100 img-fluid"
-                  alt="Team Member 1"
-                  style="height: 500px; object-fit: cover"
-                />
+                <img src="assets/img/person1.jpg" class="d-block w-100 img-fluid" alt="Team Member 1" 
+                     style="height: 500px; object-fit: cover" />
               </div>
               <div class="carousel-item">
-                <img
-                  src="assets/img/person2.jpg"
-                  class="d-block w-100 img-fluid"
-                  alt="Team Member 2"
-                  style="height: 500px; object-fit: cover"
-                />
+                <img src="assets/img/person2.jpg" class="d-block w-100 img-fluid" alt="Team Member 2" 
+                     style="height: 500px; object-fit: cover" />
               </div>
               <div class="carousel-item">
-                <img
-                  src="assets/img/person3.jpg"
-                  class="d-block w-100 img-fluid"
-                  alt="Team Member 3"
-                  style="height: 500px; object-fit: cover"
-                />
+                <img src="assets/img/person3.jpg" class="d-block w-100 img-fluid" alt="Team Member 3" 
+                     style="height: 500px; object-fit: cover" />
               </div>
               <div class="carousel-item">
-                <img
-                  src="assets/img/person4.jpg"
-                  class="d-block w-100 img-fluid"
-                  alt="Team Member 4"
-                  style="height: 500px; object-fit: cover"
-                />
+                <img src="assets/img/person4.jpg" class="d-block w-100 img-fluid" alt="Team Member 4" 
+                     style="height: 500px; object-fit: cover" />
               </div>
               <div class="carousel-item">
-                <img
-                  src="assets/img/person5.jpg"
-                  class="d-block w-100 img-fluid"
-                  alt="Team Member 5"
-                  style="height: 500px; object-fit: cover"
-                />
+                <img src="assets/img/person5.jpg" class="d-block w-100 img-fluid" alt="Team Member 5" 
+                     style="height: 500px; object-fit: cover" />
               </div>
               <div class="carousel-item">
-                <img
-                  src="assets/img/person6.jpg"
-                  class="d-block w-100 img-fluid"
-                  alt="Team Member 6"
-                  style="height: 500px; object-fit: cover"
-                />
+                <img src="assets/img/person6.jpg" class="d-block w-100 img-fluid" alt="Team Member 6" 
+                     style="height: 500px; object-fit: cover" />
               </div>
             </div>
+            
             <!-- Carousel Controls -->
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#teamCarousel"
-              data-bs-slide="prev"
-            >
+            <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
             </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#teamCarousel"
-              data-bs-slide="next"
-            >
+            <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
               <span class="carousel-control-next-icon"></span>
             </button>
           </div>
-
+        
           <!-- Grid Layout for Large Screens -->
           <div class="row g-3 d-none d-md-flex">
             <div class="col-md-4 col-6 team-images">
-              <img
-                src="assets/img/person1.jpg"
-                class="img-fluid"
-                alt="Team Member 1"
-              />
+              <img src="assets/img/person1.jpg" class="img-fluid" alt="Team Member 1" />
             </div>
             <div class="col-md-4 col-6 team-images">
-              <img
-                src="assets/img/person2.jpg"
-                class="img-fluid"
-                alt="Team Member 2"
-              />
+              <img src="assets/img/person2.jpg" class="img-fluid" alt="Team Member 2" />
             </div>
             <div class="col-md-4 col-6 team-images">
-              <img
-                src="assets/img/person3.jpg"
-                class="img-fluid"
-                alt="Team Member 3"
-              />
+              <img src="assets/img/person3.jpg" class="img-fluid" alt="Team Member 3" />
             </div>
             <div class="col-md-4 col-6 team-images">
-              <img
-                src="assets/img/person4.jpg"
-                class="img-fluid"
-                alt="Team Member 4"
-              />
+              <img src="assets/img/person4.jpg" class="img-fluid" alt="Team Member 4" />
             </div>
             <div class="col-md-4 col-6 team-images">
-              <img
-                src="assets/img/person5.jpg"
-                class="img-fluid"
-                alt="Team Member 5"
-              />
+              <img src="assets/img/person5.jpg" class="img-fluid" alt="Team Member 5" />
             </div>
             <div class="col-md-4 col-6 team-images">
-              <img
-                src="assets/img/person6.jpg"
-                class="img-fluid"
-                alt="Team Member 6"
-              />
+              <img src="assets/img/person6.jpg" class="img-fluid" alt="Team Member 6" />
             </div>
           </div>
-        </div>
+        </div>        
       </section>
 
       <!-- Impact Section -->
       <section class="impact-section mt-5" aria-labelledby="impact-heading">
         <div class="container">
-          <h2
-            id="impact-heading"
-            class="impact-title fw-semibold pb-5 text-center"
-          >
+          <h2 id="impact-heading" class="impact-title fw-semibold pb-5 text-center">
             Our Impact on Nature
           </h2>
-
+      
           <div class="row">
             <!-- Impact Item 1 -->
             <div class="col-md-3 col-6 impact-item mb-4 text-start">
-              <div class="impact-icon mb-3 text-start">
-                <img
-                  src="assets/img/plant.png"
-                  alt="Plant icon"
-                  width="60"
-                  height="60"
-                />
+              <div class="impact-icon mb-3">
+                <img src="assets/img/plant.png" alt="Plant icon" width="60" height="60" />
               </div>
-              <h5 class="text-start">Sustainable Resources</h5>
-              <p class="text-muted text-start">
-                We promote sustainable resource management to ensure long-term
-                environmental health.
+              <h5>Sustainable Resources</h5>
+              <p class="text-muted">
+                We promote sustainable resource management to ensure long-term environmental health.
               </p>
             </div>
-
+      
             <!-- Impact Item 2 -->
             <div class="col-md-3 col-6 impact-item mb-4 mt-md-5 text-start">
-              <div class="impact-icon mb-3 text-start">
-                <img
-                  src="assets/img/renewable.png"
-                  alt="Renewable energy icon"
-                  width="60"
-                  height="60"
-                />
+              <div class="impact-icon mb-3">
+                <img src="assets/img/renewable.png" alt="Renewable energy icon" width="60" height="60" />
               </div>
-              <h5 class="text-start">Reforestation</h5>
-              <p class="text-muted text-start">
-                Our reforestation initiatives help restore ecosystems and combat
-                climate change.
+              <h5>Reforestation</h5>
+              <p class="text-muted">
+                Our reforestation initiatives help restore ecosystems and combat climate change.
               </p>
             </div>
-
+      
             <!-- Impact Item 3 -->
             <div class="col-md-3 col-6 impact-item mb-4 text-start">
-              <div class="impact-icon mb-3 text-start">
-                <img
-                  src="assets/img/windmill.png"
-                  alt="Windmill icon"
-                  width="60"
-                  height="60"
-                />
+              <div class="impact-icon mb-3">
+                <img src="assets/img/windmill.png" alt="Windmill icon" width="60" height="60" />
               </div>
-              <h5 class="text-start">Renewable Energy</h5>
-              <p class="text-muted text-start">
-                We invest in clean, renewable energy solutions to reduce
-                dependence on fossil fuels.
+              <h5>Renewable Energy</h5>
+              <p class="text-muted">
+                We invest in clean, renewable energy solutions to reduce dependence on fossil fuels.
               </p>
             </div>
-
+      
             <!-- Impact Item 4 -->
             <div class="col-md-3 col-6 impact-item mb-4 mt-md-5 text-start">
-              <div class="impact-icon mb-3 text-start">
-                <img
-                  src="assets/img/plantcare.png"
-                  alt="Plant care icon"
-                  width="60"
-                  height="60"
-                />
+              <div class="impact-icon mb-3">
+                <img src="assets/img/plantcare.png" alt="Plant care icon" width="60" height="60" />
               </div>
-              <h5 class="text-start">Environmental Care</h5>
-              <p class="text-muted text-start">
-                Our comprehensive environmental programs protect natural
-                habitats.
+              <h5>Environmental Care</h5>
+              <p class="text-muted">
+                Our comprehensive environmental programs protect natural habitats.
               </p>
             </div>
           </div>
         </div>
       </section>
-
+      
       <!-- Testimonials Section -->
       <section class="testimonials py-5 bg-light">
         <div class="container">
-          <h2
-            id="impact-heading"
-            class="impact-title fw-semibold pb-5 text-center"
-          >
+          <h2 id="impact-heading" class="impact-title fw-semibold pb-5 text-center">
             Testimonials
           </h2>
+
           <div class="row g-4">
             <!-- Testimonial 1 -->
             <div class="col-md-4">
               <div class="card h-100 border-1 shadow-sm">
                 <div class="card-body p-4">
                   <p class="card-text mb-4 pb-4 fw-semibold">
-                    "This website has completely changed how I view
-                    sustainability! I've learned simple, everyday habits that
-                    make a big impact on the environment. Now, I recycle more,
-                    use less plastic, and even started composting!"
+                    "This website has completely changed how I view sustainability! I've learned simple, everyday habits that make a big impact on the environment. Now, I recycle more, use less plastic, and even started composting!"
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                      <img
-                        src="assets/img/Avatar 1.png"
-                        class="rounded-circle"
-                        width="50"
-                        height="50"
-                        alt="Mendoza"
-                      />
+                      <img src="assets/img/Avatar 1.png" class="rounded-circle" width="50" height="50" alt="Mendoza" />
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h6 class="mb-0 fw-bold">Carlos Mendoza</h6>
-                      <small class="text-muted"
-                        >A high school teacher passionate about teaching
-                        sustainability to students.</small
-                      >
+                      <small class="text-muted">
+                        A high school teacher passionate about teaching sustainability to students.
+                      </small>
                     </div>
                   </div>
                 </div>
@@ -468,27 +229,17 @@
               <div class="card h-100 border-1 shadow-sm">
                 <div class="card-body p-4">
                   <p class="card-text mb-4 pb-4 fw-semibold">
-                    "Thanks to the information here, I've joined a local
-                    tree-planting initiative. It feels amazing to contribute to
-                    a greener future and see the direct impact of my efforts in
-                    my community."
+                    "Thanks to the information here, I've joined a local tree-planting initiative. It feels amazing to contribute to a greener future and see the direct impact of my efforts in my community."
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                      <img
-                        src="assets/img/Avatar 2.png"
-                        class="rounded-circle"
-                        width="50"
-                        height="50"
-                        alt="DelaCruz"
-                      />
+                      <img src="assets/img/Avatar 2.png" class="rounded-circle" width="50" height="50" alt="DelaCruz" />
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h6 class="mb-0 fw-bold">Maria Dela Cruz</h6>
-                      <small class="text-muted"
-                        >An outdoor enthusiast and volunteer dedicated to
-                        protecting local green spaces.</small
-                      >
+                      <small class="text-muted">
+                        An outdoor enthusiast and volunteer dedicated to protecting local green spaces.
+                      </small>
                     </div>
                   </div>
                 </div>
@@ -500,27 +251,17 @@
               <div class="card h-100 border-1 shadow-sm">
                 <div class="card-body p-4">
                   <p class="card-text mb-4 pb-4 fw-semibold">
-                    "I never realized how much my daily choices affected the
-                    planet until I found this site. Now, I shop sustainably,
-                    reduce my carbon footprint, and inspire my friends to do the
-                    same!"
+                    "I never realized how much my daily choices affected the planet until I found this site. Now, I shop sustainably, reduce my carbon footprint, and inspire my friends to do the same!"
                   </p>
                   <div class="d-flex align-items-center">
                     <div class="flex-shrink-0">
-                      <img
-                        src="assets/img/Avatar 3.png"
-                        class="rounded-circle"
-                        width="50"
-                        height="50"
-                        alt="Reyes"
-                      />
+                      <img src="assets/img/Avatar 3.png" class="rounded-circle" width="50" height="50" alt="Reyes" />
                     </div>
                     <div class="flex-grow-1 ms-3">
                       <h6 class="mb-0 fw-bold">Angela Reyes</h6>
-                      <small class="text-muted"
-                        >A college student committed to promoting eco-friendly
-                        lifestyles.</small
-                      >
+                      <small class="text-muted">
+                        A college student committed to promoting eco-friendly lifestyles.
+                      </small>
                     </div>
                   </div>
                 </div>
@@ -533,9 +274,7 @@
       <!-- Donation Form Section -->
       <section
         class="donation-section min-vh-100 d-flex align-items-center mt-5"
-        style="
-          background: url('assets/img/donation\ bg.jpg') center/cover no-repeat;
-        "
+        style="background: url('assets/img/donation\ bg.jpg') center/cover no-repeat;"
         id="donation-section"
       >
         <div class="container py-5">
@@ -567,17 +306,14 @@
                   <p class="small text-white">
                     All proceeds will be delivered to the
                     <strong>Global Reforestation Initiative</strong>, organized
-                    by <strong>EcoAction Worldwide</strong>, a non-profit
-                    focused on broadening and diversifying the environmental
-                    movement and mobilizing it as the most effective vehicle for
-                    promoting a healthy, sustainable environment.
+                    by <strong>EcoAction Worldwide</strong>, a non-profit focused on
+                    broadening and diversifying the environmental movement and
+                    mobilizing it as the most effective vehicle for promoting a
+                    healthy, sustainable environment.
                   </p>
 
                   <!-- Donate Button -->
-                  <button
-                    class="btn btn-lg btn-secondary text-white mt-3"
-                    type="submit"
-                  >
+                  <button class="btn btn-lg btn-secondary text-white mt-3" type="submit">
                     Donate
                   </button>
                 </div>
@@ -586,68 +322,45 @@
           </div>
         </div>
       </section>
+
       <!-- footer -->
       <footer class="bg-secondary text-white py-4">
         <div class="container">
           <div class="row text-center text-lg-start">
-            <div
-              class="col-12 col-lg-3 mb-4 mb-lg-0 d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start"
-            >
-              <img src="assets/img/final_logo.png" style="height: 50px" />
+            <!-- Logo Section -->
+            <div class="col-12 col-lg-3 mb-4 mb-lg-0 d-flex flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-start">
+              <img src="assets/img/final_logo.png" style="height: 50px" alt="Eco Logo" />
               <h2 class="h3 mb-0 pt-2 d-none d-md-inline">ECO</h2>
             </div>
-
-            <!-- Information -->
+      
+            <!-- Information Section -->
             <div class="col-12 col-lg-3 mb-4 mb-lg-0">
               <h3 class="h5 mb-3">Information</h3>
               <ul class="list-unstyled">
-                <li
-                  class="mb-2 d-flex align-items-center justify-content-center justify-content-lg-start"
-                >
-                  <img
-                    src="assets/img/telephone.png"
-                    class="me-2"
-                    width="20"
-                    alt="Phone"
-                  />
+                <li class="mb-2 d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <img src="assets/img/telephone.png" class="me-2" width="20" alt="Phone" />
                   +63956846541
                 </li>
-                <li
-                  class="d-flex align-items-center justify-content-center justify-content-lg-start"
-                >
-                  <img
-                    src="assets/img/mail.png"
-                    class="me-2"
-                    width="20"
-                    alt="Email"
-                  />
+                <li class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <img src="assets/img/mail.png" class="me-2" width="20" alt="Email" />
                   example@email.com
                 </li>
               </ul>
             </div>
-
-            <!-- Our Location -->
+      
+            <!-- Location Section -->
             <div class="col-12 col-lg-3 mb-4 mb-lg-0">
               <h3 class="h5 mb-3">Our Location</h3>
-              <p
-                class="d-flex align-items-center justify-content-center justify-content-lg-start"
-              >
-                <img
-                  src="assets/img/location.png"
-                  class="me-2"
-                  width="20"
-                  alt="Location"
-                />
+              <p class="d-flex align-items-center justify-content-center justify-content-lg-start">
+                <img src="assets/img/location.png" class="me-2" width="20" alt="Location" />
                 Victorias City, Philippines
               </p>
             </div>
-
-            <!-- Follow Us (Social Icons) -->
+      
+            <!-- Social Media Section -->
             <div class="col-12 col-lg-3 text-center text-lg-end">
               <h3 class="h5 mb-3">Follow Us</h3>
-              <div
-                class="d-flex justify-content-center justify-content-lg-end gap-3"
-              >
+              <div class="d-flex justify-content-center justify-content-lg-end gap-3">
                 <a href="#" class="text-white">
                   <img src="assets/img/Icon.png" width="30" alt="Facebook" />
                 </a>
@@ -659,7 +372,7 @@
           </div>
         </div>
       </footer>
-
+      
       <!-- Copyright Section -->
       <div class="bg-white text-dark py-1">
         <div class="container">
@@ -674,26 +387,7 @@
       </div>
 
       <!-- JavaScript for offcanvas-->
-      <script>
-        function closeOffcanvas() {
-          // Close the offcanvas menu
-          var offcanvasElement = document.getElementById("mobileMenu");
-          var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
-          if (bsOffcanvas) {
-            bsOffcanvas.hide();
-          }
-        }
-
-        function scrollToDonation() {
-          closeOffcanvas(); // Close the menu first
-
-          setTimeout(() => {
-            document
-              .getElementById("donation-section")
-              .scrollIntoView({ behavior: "smooth" });
-          }, 320); // Delay to ensure transition
-        }
-      </script>
+      <script src="assets\js\script.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
     </main>
   </body>

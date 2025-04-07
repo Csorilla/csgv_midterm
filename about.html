@@ -10,6 +10,26 @@
     <link rel="icon" href="assets/img/final_logo.png" type="image/x-icon" />
   </head>
   <body>
+       <!-- Loader -->
+       <div
+       id="loader"
+       style="
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         height: 100%;
+         background: white;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         z-index: 9999;
+       "
+     >
+       <div class="spinner-border text-success" role="status">
+         <span class="visually-hidden">Loading...</span>
+       </div>
+     </div>
     <main>
       <!-- About Us Section -->
       <section class="hero overflow-hidden d-flex flex-column vh-100">
@@ -130,20 +150,20 @@
               <div class="p-4 pt-5 mt-5 p-lg-5 text-white">
                 <h2 class="display-5 fw-bold mb-4 text-center">Vision</h2>
       
-                <div class="vision-list">
+                <div class="vision-list d-inline-block text-start text-center">
                   <!-- Vision Item 1 -->
-                  <div class="d-flex mb-4">
+                  <div class=" mb-4">
                     <div class="me-4 text-secondary fs-3">•</div>
                     <div>
                       <h4 class="h5 fw-bold">Sustainability</h4>
-                      <p class="mb-0">
+                      <p class="mb-0  ">
                         We believe in making choices that preserve natural resources and ensure a healthier planet for future generations.
                       </p>
                     </div>
                   </div>
       
                   <!-- Vision Item 2 -->
-                  <div class="d-flex mb-4">
+                  <div class="mb-4">
                     <div class="me-4 text-secondary fs-3">•</div>
                     <div>
                       <h4 class="h5 fw-bold">Education</h4>
@@ -154,7 +174,7 @@
                   </div>
       
                   <!-- Vision Item 3 -->
-                  <div class="d-flex mb-4">
+                  <div class="mb-4">
                     <div class="me-4 text-secondary fs-3">•</div>
                     <div>
                       <h4 class="h5 fw-bold">Community</h4>
@@ -165,7 +185,7 @@
                   </div>
       
                   <!-- Vision Item 4 -->
-                  <div class="d-flex mb-4">
+                  <div class="mb-4">
                     <div class="me-4 text-secondary fs-3">•</div>
                     <div>
                       <h4 class="h5 fw-bold">Responsibility</h4>
@@ -176,7 +196,7 @@
                   </div>
       
                   <!-- Vision Item 5 -->
-                  <div class="d-flex mb-4">
+                  <div class="mb-4">
                     <div class="me-4 text-secondary fs-3">•</div>
                     <div>
                       <h4 class="h5 fw-bold">Innovation</h4>
@@ -254,6 +274,12 @@
       <!-- JavaScript for offcanvas-->
       <script src="assets/js/script.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script>
+        window.addEventListener("load", function () {
+          const loader = document.getElementById("loader");
+          loader.style.display = "none";
+        });
+      </script>
     </main>
   </body>
 </html>

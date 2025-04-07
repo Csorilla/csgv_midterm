@@ -10,6 +10,26 @@
     <link rel="icon" href="assets/img/final_logo.png" type="image/x-icon" />
   </head>
   <body>
+    <!-- Loader -->
+    <div
+      id="loader"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      "
+    >
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
     <main>
       <!-- About Us Section -->
       <section class="hero overflow-hidden d-flex flex-column vh-100">
@@ -34,97 +54,165 @@
         </div>
 
         <!-- Content Container -->
-        <div class="container position-relative z-1 text-white d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <div
+          class="container position-relative z-1 text-white d-flex flex-column justify-content-center align-items-center min-vh-100"
+        >
           <div class="row justify-content-center">
-            
             <!-- Contact Section -->
             <div class="col-lg-8 text-center">
               <h2 class="fw-bold mb-0 fs-4 fs-md-3 fs-lg-2">Contact</h2>
-              <div class="justify-content-center mx-auto p-3 p-md-4 p-lg-4 rounded-3">
+              <div
+                class="justify-content-center mx-auto p-3 p-md-4 p-lg-4 rounded-3"
+              >
                 <p class="mb-4 fs-6 fs-md-5">
-                  Do you have any questions? Feel free to get in touch with us via our contact form below. We usually reply within 24 hours!
+                  Do you have any questions? Feel free to get in touch with us
+                  via our contact form below. We usually reply within 24 hours!
                 </p>
               </div>
             </div>
-            
+
             <!-- Visit Us Section -->
             <div class="col-lg-8 text-center">
-              <h2 class="fw-bold mb-0 fs-4 fs-md-3 fs-lg-2">Want to visit us?</h2>
-              <div class="justify-content-center mx-auto p-3 p-md-4 p-lg-4 rounded-3">
+              <h2 class="fw-bold mb-0 fs-4 fs-md-3 fs-lg-2">
+                Want to visit us?
+              </h2>
+              <div
+                class="justify-content-center mx-auto p-3 p-md-4 p-lg-4 rounded-3"
+              >
                 <p class="mb-4 fs-6 fs-md-5">
-                  <a href="https://www.google.com/maps/search/?api=1&query=W33G%2BPH9%2C%2087%20Osme%C3%B1a%20Ave%2C%20Victorias%20City%2C%20Negros%20Occidental"
-                     target="_blank" class="text-decoration-underline text-white">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=W33G%2BPH9%2C%2087%20Osme%C3%B1a%20Ave%2C%20Victorias%20City%2C%20Negros%20Occidental"
+                    target="_blank"
+                    class="text-decoration-underline text-white"
+                  >
                     Colegio De Sta. Ana De Victorias, Philippines
                   </a>
                 </p>
               </div>
             </div>
-            
+
             <!-- Call Us Section -->
             <div class="col-lg-8 text-center pb-5">
-              <h2 class="fw-bold mb-0 fs-4 fs-md-3 fs-lg-2">Want to call us?</h2>
-              <div class="justify-content-center mx-auto p-3 p-md-4 p-lg-4 rounded-3">
+              <h2 class="fw-bold mb-0 fs-4 fs-md-3 fs-lg-2">
+                Want to call us?
+              </h2>
+              <div
+                class="justify-content-center mx-auto p-3 p-md-4 p-lg-4 rounded-3"
+              >
                 <p class="mb-4 fs-6 fs-md-5">+63956846541</p>
               </div>
             </div>
           </div>
-        </div>        
+        </div>
       </section>
 
       <!-- Contact Us Section -->
       <section class="get-in-touch-section" style="background-color: #f8f9fa">
         <div class="container pb-5 pt-3">
-      
           <!-- Section Title -->
           <div class="col-lg-12 text-center pb-3">
-            <h2 class="fw-bold mb-0 fs-4 fs-md-3 fs-lg-2">Get in touch with us</h2>
+            <h2 class="fw-bold mb-0 fs-4 fs-md-3 fs-lg-2">
+              Get in touch with us
+            </h2>
           </div>
-      
+
           <!-- Contact Form -->
           <form class="d-flex justify-content-center">
-            <div class="card shadow-lg p-4" style="max-width: 500px; width: 100%">
+            <div
+              class="card shadow-lg p-4"
+              style="max-width: 500px; width: 100%"
+            >
               <div class="card-body">
-      
                 <!-- Name Input -->
                 <div class="mb-3">
                   <label for="name" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                  />
                 </div>
-      
+
                 <!-- Surname Input -->
                 <div class="mb-3">
                   <label for="surname" class="form-label">Surname</label>
-                  <input type="text" class="form-control" id="surname" placeholder="Enter your surname" required />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="surname"
+                    placeholder="Enter your surname"
+                    required
+                  />
                 </div>
-      
+
                 <!-- Email Input -->
                 <div class="mb-3">
                   <label for="email" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
                 </div>
-      
+
                 <!-- Message Input -->
                 <div class="mb-3">
                   <label for="message" class="form-label">Message</label>
-                  <textarea class="form-control" id="message" rows="4" placeholder="How can we help you?" required></textarea>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="4"
+                    placeholder="How can we help you?"
+                    required
+                  ></textarea>
                 </div>
-      
+
                 <!-- Submit Button -->
                 <div class="d-grid">
-                  <button type="submit" class="btn btn-secondary">Submit</button>
+                  <button type="submit" class="btn btn-secondary">
+                    Submit
+                  </button>
                 </div>
               </div>
             </div>
           </form>
         </div>
       </section>
-      
+      <!-- gmaps embed -->
+      <section id="location" class="py-5 text-center">
+        <div class="container">
+          <h2 class="mb-3">Our Location</h2>
+          <p class="mb-4">Find us here:</p>
+          <div class="ratio ratio-16x9 rounded shadow">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.7742831628557!2d123.0723257739087!3d10.904751389251912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33af2d2b95900001%3A0x2329a89ab10f3d63!2sColegio%20De%20Sta.%20Ana%20De%20Victorias!5e0!3m2!1sen!2sph!4v1744016884934!5m2!1sen!2sph"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <!-- footer -->
       <div id="footer-placeholder"></div>
 
       <!-- JavaScript for offcanvas-->
       <script src="assets/js/script.js"></script>
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script>
+        window.addEventListener("load", function () {
+          const loader = document.getElementById("loader");
+          loader.style.display = "none";
+        });
+      </script>
     </main>
   </body>
 </html>

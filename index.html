@@ -9,7 +9,47 @@
     <title>Environmental Conservation Organization</title>
     <link rel="icon" href="assets/img/final_logo.png" type="image/x-icon" />
   </head>
+  <style>
+    .testimonials .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .testimonials .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .team-section img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .team-section img:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
   <body>
+    <!-- Loader -->
+    <div
+      id="loader"
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+      "
+    >
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
     <main>
       <!-- Hero Section -->
       <section class="hero overflow-hidden d-flex flex-column vh-100">
@@ -419,6 +459,13 @@
       <!-- JavaScript for offcanvas-->
       <script src="assets\js\script.js"></script>
       <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+      <script>
+        window.addEventListener("load", function () {
+          const loader = document.getElementById("loader");
+          loader.style.display = "none";
+        });
+      </script>
     </main>
   </body>
 </html>

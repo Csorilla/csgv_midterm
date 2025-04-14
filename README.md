@@ -14,7 +14,8 @@ The design follows a clean and modern layout with an emphasis on readability and
 
 ### Logo
 ![Logo](assets/readme_img/final_logo.png)
-The logo consists of a minimalist representation of a tree, symbolizing growth and sustainability. It uses a green and teal color palette to evoke a sense of nature and harmony.
+
+- The logo consists of a minimalist representation of a tree, symbolizing growth and sustainability. It uses a green and teal color palette to evoke a sense of nature and harmony.
 
 ### Colors
 ![Colors](assets/readme_img/CSGV.png)

@@ -5,12 +5,19 @@ The Environmental Conservation Organization (ECO) is a web platform dedicated to
 
 ## Design Choices
 ### Wireframe
+![WireFrame](assets/readme_img/home.jpg)
+
+![WireFrame](assets/readme_img/about.jpg)
+
+![WireFrame](assets/readme_img/contact.jpg)
 The design follows a clean and modern layout with an emphasis on readability and accessibility. The homepage features a hero section with impactful visuals and a clear call to action. The navigation is intuitive, leading users to key sections such as projects, team members, and impact reports.
 
 ### Logo
+![Logo](assets/readme_img/final_logo.png)
 The logo consists of a minimalist representation of a tree, symbolizing growth and sustainability. It uses a green and teal color palette to evoke a sense of nature and harmony.
 
 ### Colors
+![Colors](assets/readme_img/CSGV.png)
 - **Primary (White - #ffffff):** Used for backgrounds and text contrast.
 - **Secondary (Teal - #2a9d8f):** Represents sustainability and is used for buttons and highlights.
 - **Tertiary (Black - #000000):** Used for typography and strong contrast elements.
